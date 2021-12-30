@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      *
+      {margin:0;
+      padding:0;}
+
+      #outer
+      {
+      background-color:#000;
+      width:1020px;
+      height:420px;
+      margin:10px auto;
+      padding:10px 0;
+      position:relative;
+      overflow:hidden;
+      border-radius: 7px;
+      }
+
+      #imgList
+      {list-style:none;
+      position:absolute;
+      left:0px;
+      }
+
+      #imgList li
+      {float:left;
+      margin:0 10px;
+      }
+
+      #img1
+      {width:1000px;
+      height:410px;
+      border-radius: 7px;
+      }
+
+      #navDiv
+      {position:absolute;
+      bottom:7px;
+      }
+
+      #navDiv a
+      {float:left;
+      width:15px;
+      height:5px;
+      margin:0 2px;
+      background-color:rgb(73,83,96);
+      opacity:0.5;
+      filter:alpha(opacity=50);
+      border-radius: 7px;}
+
+      #navDiv a:hover
+      {background-color:rgb(118,126,136);
+      }
+    </style>
+    <script type="text/javascript">
+          window.onload = function(){
+            var imgList = document.getElementById("imgList");
+            var imgArr = document.getElementsByTagName("img");
+            imgList.style.width = 1020*imgArr.length+"px";
+
+            var navDiv = document.getElementById("navDiv")
+            var outer = document.getElementById("outer")
+            navDiv.style.left = (outer.offsetWidth - navDiv.offsetWidth)/2 + "px";
+
+            var index = 0;
+            var allA = document.querySelectorAll("a.a1");
+            allA[index].style.backgroundColor = "rgb(200,200,200)";
+
+            for(var i=0; i<allA.length ; i++)
+            {
+              allA[i].num = i;
+              allA[i].onclick = function()
+              {
+                index = this.num;
+                imgList.style.left = -1020 * index + "px";
+                setA();
+              };
+            }
+
+            function setA()
+            {
+              for(var i = 0 ; i<allA.length ; i++)
+              {
+                allA[i].style.backgroundColor = ""
+              }
+              allA[index].style.backgroundColor = "rgb(200,200,200)";
+            };
+
+          };
+    </script>
+  </head>
+  <body>
+    <div id="outer">
+      <ul id="imgList">
+        <li><img id="img1" src="Media for Assignment 1/Mosque.jpg" alt="Mosque" class="center" title="Mosque"/></li>
+        <li><img id="img1" src="Media for Assignment 1/crescent-lake.jpg" alt="Crescent Lake" class="center" title="Crescent Lake"/></li>
+        <li><img id="img1" src="Media for Assignment 1/petra-ancient-jordan.jpg" alt="Jordan Ancient Petra" class="center" title="Jordan Ancient Petra"/></li>
+        <li><img id="img1" src="Media for Assignment 1/Kyoto-Daigoji-temple.jpg" alt="Kyoto Gardens Pagodas" class="center" title="Kyoto Daigoji temple"/></li>
+        <li><img id="img1" src="Media for Assignment 1/mount-fuji.jpg" alt="Mount Fuji" class="center" title="Mount Fuji"/></li>
+      </ul>
+      <div id="navDiv">
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+#DLETE
+{color: rgb(200,200,200);}
+
+#tabcolor th
+{text-align: center;
+  background-color: rgb(30,135,157);
+  color: white;
+}
+
+#tabcolor td
+{text-align: center;}
+
+#tabcolor td:first-child
+{
+  background-color: rgb(23,55,94);
+  color: white;
+}
+
+#cv19
+{background-color: rgb(235,0,0);
+  margin: 0 auto;
+  padding: 7px 0px;
+  width: 80%;
+border-radius: 7px;}
+
+#cvtext
+{color: rgb(260,260,260);
+  font-weight: bold;
+margin: 1.5% 1% 1% 10%;}
+
+#cell1
+{background-color:rgb(217,217,217);
+text-shadow: 1.5px 1.5px 1.5px black;
+font-style: italic;}
+
+#tabcolor table
+{margin: 0 auto;
+  width: 60%;
+  height: 240px;
+border-collapse: collapse;
+border-color: white;
+}
+
+#tabcolor tr:nth-child(even)
+{background-color: rgb(242,242,242);
+}
+
+#tabcolor tr:nth-child(odd)
+{background-color:rgb(217,217,217);}
+
+#tabcolor
+{
+  border: 5px 5px 5px 5px;
+  border-color: yellow;}
+
+#calT
+{border-radius: 4px;
+}
+
+#calT td
+{
+	border-collapse:collapse;
+  border-width: thin;
+  border-color: white;
+  padding:7px;
+  text-align: center;
+}
+
+#inputString
+{width:60%;
+  border-width: thin;
+border-radius: 4px;}
+
+#calColor
+{background-color: rgb(217,217,217);
+width: 15%;
+margin-top: 2%;
+border-radius: 3px;
+box-shadow: 2px 2px 2px grey;}

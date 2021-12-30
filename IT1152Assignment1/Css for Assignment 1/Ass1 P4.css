@@ -1,0 +1,81 @@
+#dateColor
+{background-color: white;
+width: 20%;
+margin-left: 10.3%;
+border-radius: 5px;
+box-shadow: 1px 1px 1px grey;}
+
+#memVip
+{background-color: white;
+width: 20%;
+border-radius: 5px;}
+
+#formColor
+{background-color: white;
+  width: 80%;
+  margin:0 auto;
+  border: 0px 20px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 8px;}
+
+#formTitle
+{background-color: lightblue;
+margin:0 auto;
+text-align: center;
+text-shadow: 2px 2px 2px white;
+box-shadow: 3px 3px 3px grey;
+width: 80%;
+border-radius: 8px;}
+
+#SButton
+{padding: 30px 0px;
+margin-left: 20%;}
+
+.form
+{margin-left: 23%;}
+
+label
+{margin:13px 0px 10px;}
+
+h3
+{font-style: italic;
+padding:10px 0px;
+text-shadow: 0.5px 0.5px 0.5px grey;}
+
+input
+{margin:2% 0% 3%;
+width: 30%;
+height: 26px;
+border-radius: 7px;
+border-width: thin;
+background-color:rgb(214,241,260);}
+
+input:hover
+{box-shadow:2px 2px 2px lightblue;}
+
+button
+{border-width: thin;
+border-radius: 6px;
+font-style: italic;
+padding: 10px 0px;
+width: 18%;
+background-color: lightblue;}
+
+textarea
+{background-color:rgb(209,236,255);
+border-width: thin;
+width: 70%;
+height: 40px;
+border-radius: 7px;}
+
+textarea:hover
+{box-shadow: 2px 2px 2px lightblue;}
+
+button:hover
+{box-shadow: 2px 2px 2px grey;
+background-color:rgb(209,236,255); }
+
+#Sformc
+{background-color:white;
+  width:80%;
+  border-radius: 8px;}

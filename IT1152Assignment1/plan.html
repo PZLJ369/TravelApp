@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyXing\Plans</title>
+    <link rel="stylesheet" href="Css for Assignment 1/Ass1 P3.css" />
+    <link rel="stylesheet" href="Css for Assignment 1/All.css" />
+
+  </style>
+  <script type="text/javascript">
+
+  var input="";
+
+  function updateString(value) {
+      input=input+value;
+    document.getElementById("inputString").value=input;
+  }
+  function calculate() {
+    var result=eval(input);
+    document.getElementById("inputString").value=result;
+    input="";
+  }
+  function resetString() {
+    input="";
+    document.getElementById("inputString").value="";
+  }
+
+  </script>
+
+  </head>
+  <body>
+      <div id="topColor">
+        <img id="Pl"src="Media for Assignment 1/Plane1.png" alt="icon" title="FlyXing"/>
+        <p id="Tle"><a href="home.html"><strong>FlyXing .Traveling </strong></a></p>
+      </div>
+    <div id="boxY">
+      <ul class="contentBar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="plan.html">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <hr />
+    <p id="text1"><b>Traveling Plans</b></p>
+    <p id="text2">We offer different kinds of traveling plans</p>
+    <div id="cv19">
+    <p id="cvtext">*Important*<br />
+    Due to the covid19 we offer special prices for all plans!<br />
+    Please be caution when you travel and we hope that we can walk through this special period with you.</p>
+    </div>
+    <p id="text1">Plan A</p>
+    <div id="tabcolor">
+    <table border="1" align="center">
+      <tr><td id="cell1">TYPE</td><th>Maximum number</th><th>Minimium number</th><th>Usual Prices</th><th>Prices Discount</th></tr>
+      <tr><td>Travel with Group</td><td>30</td><td>5</td><td>$100 per person</td><td>$50 per person</td></tr>
+      <tr><td>Family Travel</td><td>12</td><td>3</td><td>$80 per person</td><td>$40 per person</td></tr>
+      <tr><td>Travel with Friends</td><td>10</td><td>2</td><td>$70 per person</td><td>$35 per person</td></tr>
+    </table>
+    </div>
+    <p id="text1">Plan B</p>
+    <div id="tabcolor">
+    <table border="1" align="center">
+      <tr><td id="cell1">TYPE</td><th>Maximum number</th><th>Minimium number</th><th>Usual Prices</th><th>Prices Discount</th></tr>
+      <tr><td>Luxury Travel</td><td>15</td><td>1</td><td>$80 per person</td><td>$40 per person</td></tr>
+      <tr><td>Adventure Travel</td><td>8</td><td>2</td><td>$90 per person</td><td>$45 per person</td></tr>
+      <tr><td>Solo Travel</td><td>10</td><td>2</td><td>$80 per person</td><td>$40 per person</td></tr>
+    </table>
+    </div>
+    <p id="text1">Plan C</p>
+    <div id="tabcolor">
+    <table border="1" align="center">
+      <tr><td id="cell1">TYPE</td><th>Maximum number</th><th>Minimium number</th><th>Usual Prices</th><th>Prices Discount</th></tr>
+      <tr><td>Special</td><td colspan="5"><b>Business Travel</b></td></tr>
+      <tr><td>Individual</td><td colspan="2">1</td><td>$100 per person</td><td>$50 per person</td></tr>
+      <tr><td>Group</td><td>20</td><td>2</td><td>$90 per person</td><td>$45 per person</td></tr>
+    </table>
+    </div>
+
+    <center>
+
+    <br />
+
+  <div id="calColor">
+    <p><em>price</em></p>
+    <hr />
+  <br />
+  <input type="text" id="inputString" readonly />
+  <table border="1" id="calT">
+  <tr>
+     <td><input type="button" value="7" onclick="updateString('7')"/></td>
+     <td><input type="button" value="8" onclick="updateString('8')"/></td>
+     <td><input type="button" value="9" onclick="updateString('9')"/></td>
+     <td><input type="button" value="+" onclick="updateString('+')"/></td>
+  </tr>
+  <tr>
+     <td><input type="button" value="4" onclick="updateString('4')"/></td>
+     <td><input type="button" value="5" onclick="updateString('5')"/></td>
+     <td><input type="button" value="6" onclick="updateString('6')"/></td>
+     <td><input type="button" value="-" onclick="updateString('-')"/></td>
+  </tr>
+  <tr>
+     <td><input type="button" value="3" onclick="updateString('3')"/></td>
+     <td><input type="button" value="2" onclick="updateString('2')"/></td>
+     <td><input type="button" value="1" onclick="updateString('1')"/></td>
+     <td><input type="button" value="*" onclick="updateString('*')"/></td>
+  </tr>
+  <tr>
+     <td><input type="button" value="0" onclick="updateString('0')"/></td>
+     <td><input type="button" value="." onclick="updateString('.')"/></td>
+     <td><input type="button" value="C" onclick="resetString()"/></td>
+     <td><input type="button" value="=" onclick="calculate()"/></td>
+  </tr>
+
+  </table>
+  <br />
+  </div>
+    </center>
+
+    <p id="text3">Enjoy your traveling and we will always be with you.</p>
+
+    <div>
+      <br />
+      <hr />
+      <div id="bottomColor"><br /></div>
+      <p id="textEnd">official number: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">8888 8888</a> | official email: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">FlyXingTravel888@yahoo.com</a> |
+        address: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">Singapore 888 888</a></p>
+    <div id="bottomColor"><br /></div>
+    <hr />
+    <div>
+        <p id="lastPart">FlyXing.Traveling<br />
+        &copy; 2020 FlyXing Corporation. All rights reserved.</p>
+    </div>
+    <hr />
+    </div>
+
+  </body>
+</html>

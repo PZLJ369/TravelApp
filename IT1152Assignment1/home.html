@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyXing\Home</title>
+    <link rel="stylesheet" href="Css for Assignment 1/Ass1 P1.css" />
+    <link rel="stylesheet" href="Css for Assignment 1/All.css" />
+    <script type="text/javascript">
+          window.onload = function(){
+            var imgList = document.getElementById("imgList");
+            var imgArr = document.getElementsByTagName("img");
+            imgList.style.width = 1020*imgArr.length+"px";
+
+            var navDiv = document.getElementById("navDiv")
+            var outer = document.getElementById("outer")
+            navDiv.style.left = (outer.offsetWidth - navDiv.offsetWidth)/2 + "px";
+
+            var index = 0;
+            var allA = document.querySelectorAll("a.a1");
+            allA[index].style.backgroundColor = "rgb(200,200,200)";
+
+            for(var i=0; i<allA.length ; i++){
+              allA[i].num = i;
+              allA[i].onclick = function(){
+                index = this.num;
+                imgList.style.left = -1020 * index + "px";
+                setA();
+              };
+            }
+
+            function setA(){
+              for(var i = 0 ; i<allA.length ; i++){
+                allA[i].style.backgroundColor = ""
+              }
+              allA[index].style.backgroundColor = "rgb(200,200,200)";
+            };
+
+          };
+    </script>
+
+  </head>
+  <body>
+
+    <div id="topColor">
+      <img id="Pl"src="Media for Assignment 1/Plane1.png" alt="icon" title="FlyXing"/>
+      <p id="Tle"><a href="home.html"><strong>FlyXing .Traveling </strong></a></p>
+    </div>
+    <div id="boxY">
+      <ul class="contentBar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="plan.html">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+    <div >
+      <h1 id="text1">Travel with FlyXing</h1>
+      <p id="text2">Take a look at the most interesting places in the world</p>
+      <br />
+    </div>
+    <div id="outer">
+      <ul id="imgList">
+        <li><img id="img1" src="Media for Assignment 1/Mosque.jpg" alt="Mosque" class="center" title="Mosque"/></li>
+        <li><img id="img1" src="Media for Assignment 1/crescent-lake.jpg" alt="Crescent Lake" class="center" title="Crescent Lake"/></li>
+        <li><img id="img1" src="Media for Assignment 1/petra-ancient-jordan.jpg" alt="Jordan Ancient Petra" class="center" title="Jordan Ancient Petra"/></li>
+        <li><img id="img1" src="Media for Assignment 1/Kyoto-Daigoji-temple.jpg" alt="Kyoto Gardens Pagodas" class="center" title="Kyoto Daigoji temple"/></li>
+        <li><img id="img1" src="Media for Assignment 1/mount-fuji.jpg" alt="Mount Fuji" class="center" title="Mount Fuji"/></li>
+      </ul>
+      <div id="navDiv">
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+          <a class="a1" href="javascript:;"></a>
+      </div>
+    </div>
+    <div></div>
+    <br />
+    <h1 id="text1">About FlyXing</h1>
+    <p id="text2">FlyXing is a tourism company based in Singapore, with 1000 employees.</p>
+    <iframe id="v1" width="640" height="360" controls src="https://www.youtube.com/embed/nqQf3VIsj-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="listR">
+      <p id="weF">We focus on:</p>
+      <br />
+      <ul>
+        <li id="mainL">Check in and Check out</li>
+            <ul id="subL">
+              <li>Ensure high quality of services</li>
+              <li>We will purchase the ticket for you</li>
+            </ul>
+          <br />
+        <li id="mainL">Reception</li>
+          <ul id="subL">
+            <li>Assure 24/7 travel support</li>
+            <li>Provide hotel and food</li>
+            <li>As comfortable as your home</li>
+          </ul>
+          <br />
+        <li id="mainL">Traveler's safety and security.</li>
+          <ul id="subL">
+            <li>Tour guide will follow you for the journey</li>
+            <li>We offer insurance</li>
+            <li>Keep belongings safe</li>
+          </ul>
+          <br />
+        <li id="mainL">Credit-card management.</li>
+          <ul id="subL">
+            <li>Offer cheapest price traveling</li>
+            <li>Manage the money spend on local products</li>
+            <li>Organise efective tavelng plan</li>
+          </ul>
+      </ul>
+    </div>
+      <h1 id="text1">History</h1>
+      <p id="text3">
+        FlyXing first started its travel business in 2005, by Dr Tan Wei Yan, an expert in business management.<br />
+        FlyXing were focusing on delivery goods and transportaions in the past, and willing to provide quality <br />
+        services for more people. In july 2005, FlyXing started its first travel business. Since FlyXing brings<br />
+        customers to many parts of the world for visiting, it become one of the popular travel companies in the<br />
+        world.
+      </p>
+
+    <div>
+      <br />
+      <hr />
+      <div id="bottomColor"><br /></div>
+      <p id="textEnd">official number: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">8888 8888</a> | official email: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">FlyXingTravel888@yahoo.com</a> |
+        address: <a href="#" style="text-decoration:none;color:rgb(210,210,210);">Singapore 888 888</a></p>
+    <div id="bottomColor"><br /></div>
+    <hr />
+    <div>
+        <p id="lastPart">FlyXing.Traveling<br />
+        &copy; 2020 FlyXing Corporation. All rights reserved.</p>
+    </div>
+    <hr />
+    </div>
+
+  </body>
+</html>
